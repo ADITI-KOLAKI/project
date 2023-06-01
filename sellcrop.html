@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="firstpage.css">
+    <style>
+      
+      body 
+{
+  font-family:Arial; 
+  background: -webkit-linear-gradient(to right, #155799, #159957); 
+  background: linear-gradient(to right, #155799, #159957); 
+  color:whitesmoke;
+  align-items: center;
+}
+   form{
+    padding:30px;
+    width:40rem;
+    margin:auto;
+    color:whitesmoke;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(11,15,13,0.582);
+    border-radius: 12px;
+    border:1px solid rgba(255, 255, 255, 0.125);
+    
+    
+}
+      h1 {
+        text-align: center;
+      }
+      
+      input[type="text"],
+      input[type="number"],
+    
+      input[type="password"]
+       {
+        display: block;
+        width: 590px;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 3px;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+        font-size: 16px;
+      }
+      input[type="submit"] {
+        background-color: #4cafa0;
+        color: #ffffff;
+        border: none;
+        border-radius: 3px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="menu">
+  
+        <ul>
+          <li><a href="sign.html">Complaint Page</a></li>
+          <li><a href="register.html"> View Complaint Status</a></li>
+          <li><a href="register.html">Farming tips</a></li>
+          <li><a href="register.html"> Crop Advertisement Details</a></li>
+          <li><a href="sellcrop.html">Sell Crop</a></li>
+          <li><a href="register.html">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+    <form action="#" method="post">
+      <h1>SELL CROP</h1>
+      <label for="cropname">Crop name:</label><br/><br>
+      <input type="text" placeholder="Enter Crop name" name="cropname" required>
+      <label for="quantity">Quantity:</label><br/><br>
+      <input type="number" placeholder="Enter number" name="quantity" required>
+      
+      <label for="amount">Amount:</label><br/><br>
+      <input type="text" placeholder="Enter amount" name="amount" required>
+      
+      <input type="submit" value="Enter">
+    </form>
+  </body>
+</html>

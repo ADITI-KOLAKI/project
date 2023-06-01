@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Farming Assistance</title>
+  <style>
+    /* Add your custom CSS styles here */
+  </style>
+</head>
+<body>
+  <div id="content">
+    <!-- Complaint Page -->
+    <section id="complaint">
+      <h2>Complaint Page</h2>
+      <form id="complaintForm">
+        <label for="complaintText">Enter your complaint:</label>
+        <textarea id="complaintText" rows="4" cols="50"></textarea>
+        <button type="submit">Submit Complaint</button>
+      </form>
+    </section>
+
+    <!-- View Status Page -->
+    <section id="status">
+      <h2>View Status Page</h2>
+      <p>Status: <span id="statusText">Loading...</span></p>
+    </section>
+
+    <!-- Farming Tips -->
+    <section id="farmingTips">
+      <h2>Farming Tips</h2>
+      <ul id="tipsList">
+        <li>Tips 1</li>
+        <li>Tips 2</li>
+        <li>Tips 3</li>
+      </ul>
+    </section>
+
+    <!-- Crop Advertisement Details -->
+    <section id="cropDetails">
+      <h2>Crop Advertisement Details</h2>
+      <div id="cropInfo">
+        <p>Crop Name: <span id="cropName">Crop Name</span></p>
+        <p>Price: <span id="cropPrice">Crop Price</span></p>
+        <p>Description: <span id="cropDescription">Crop Description</span></p>
+      </div>
+    </section>
+
+    <!-- Sell Crop -->
+    <section id="sellCrop">
+      <h2>Sell Crop</h2>
+      <form id="sellCropForm">
+        <label for="cropName">Crop Name:</label>
+        <input type="text" id="cropName" required>
+        <label for="cropQuantity">Quantity:</label>
+        <input type="number" id="cropQuantity" required>
+        <button type="submit">Sell Crop</button>
+      </form>
+    </section>
+
+    <!-- Logout -->
+    <section id="logout">
+      <h2>Logout</h2>
+      <button id="logoutButton">Logout</button>
+    </section>
+  </div>
+
+  <script>
+    // Add your JavaScript code here
+
+    // Example functions to handle form submissions
+    document.getElementById('complaintForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const complaintText = document.getElementById('complaintText').value;
+      // Handle complaint submission
+      // ...
+    });
+
+    document.getElementById('sellCropForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const cropName = document.getElementById('cropName').value;
+      const cropQuantity = document.getElementById('cropQuantity').value;
+      // Handle crop selling
+      // ...
+    });
+
+    document.getElementById('logoutButton').addEventListener('click', function() {
+      // Handle logout
+      // ...
+    });
+  </script>
+</body>
+</html>

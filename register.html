@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    
+    <title>Sign Up</title>
+    <style>
+     
+      body 
+{
+  font-family:Arial; 
+  background: -webkit-linear-gradient(to right, #155799, #159957); 
+  background: linear-gradient(to right, #155799, #159957); 
+  color:whitesmoke;
+  align-items: center;
+}
+   form{
+    padding:30px;
+    width:40rem;
+    margin:auto;
+    color:whitesmoke;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(11,15,13,0.582);
+    border-radius: 12px;
+    border:1px solid rgba(255, 255, 255, 0.125);
+    
+    
+}
+      h1 {
+        text-align: center;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="password"]
+       {
+        display: block;
+        width: 590px;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 3px;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+        font-size: 16px;
+      }
+      input[type="submit"] {
+        background-color: #4cafa0;
+        color: #ffffff;
+        border: none;
+        border-radius: 3px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+    <script type = "text/javascript" src = "PASSH.js">
+    </script>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <h1>Sign Up</h1>
+      <label for="username">Username:</label><br/><br>
+      <input type="text" placeholder="Enter Username" id="username" name="username" required>
+      <label for="email">Email:</label><br/><br>
+      <input type="email" placeholder="Enter Email Id"  id="email" name="email" required>
+      <label for="phone">Phone No.:</label><br/><br>
+      <input type="tel" placeholder="Enter Phone No." id="phone" name="phone" required>
+      <label for="address">Address:</label><br/><br>
+      <input type="text" id="address" placeholder="Enter Address" name="address" required>
+      <label for="password">Password:</label><br/><br>
+      <input type="password" placeholder="Enter Password" id="password" name="password" required>
+      <label for="confirm-password">Confirm Password:</label><br/><br>
+      <input type="password" placeholder="Enter Password" id="confirm-password" name="confirm-password" required>
+      <label for="user_type">User Type:</label><br/><br>
+      <select id="user_type" name="user_type" required>
+        <option value="" disabled selected>Select User Type</option>
+        <option value="retailer">Retailer</option>
+        <option value="farmer">Farmer</option>
+      </select><br/><br>
+      <input type="submit" value="Sign Up">
+      <script type="text/javascript" src = "PASSR.js">
+      </script>
+      <?php
+      $servername = "localhost";
+      $username = "root";
+      $password = "";
+      
+      // Create connection
+      $conn = new mysqli($servername, $username, $password);
+      
+      // Check connection
+      if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+      }
+      echo "Connected successfully";
+      ?>
+    </form>
+  </body>
+</html>
